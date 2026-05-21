@@ -83,12 +83,12 @@ bashpython cipherlock.py encrypt -i secret.txt -o secret.vault
 
   ✔  Vault created → secret.vault  (2.1 KB)
 Encrypt a Folder
-bashpython cipherlock.py encrypt -i ./my_project/ -o my_project.vault
+Python3 Cipherlock.py encrypt -i ./my_project/ -o my_project.vault
 CipherLock automatically compresses the entire folder structure (preserving all subfolders and files) into a .tar.gz archive, then encrypts it as a single .vault file.
 Decrypt a File
-bashpython cipherlock.py decrypt -i secret.vault -o secret_restored.txt
+Python3 Cipherlock.py decrypt -i secret.vault -o secret_restored.txt
 Decrypt a Folder
-bashpython cipherlock.py decrypt -i my_project.vault -o ./restored/
+Python3 cipherlock.py decrypt -i my_project.vault -o ./restored/
 The original directory structure is fully restored inside the destination path.
 
 🧪 Example Workflow
